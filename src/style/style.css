@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto+Mono:wght@300;400;500;600;700&display=swap");
+
+:root {
+  /* Typography */
+  --regular-font: "Lato", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+
+  --heading-font: "Roboto Mono", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    monospace, sans-serif;
+
+  --line-height: 1.75;
+
+  --box-shadow-1: 2px 4px 6px #000;
+
+  --transition-8: all 0.8s ease-in-out;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--regular-font);
+  font-size: 16px;
+  /* animation: rotate 1s ease-in-out 1 both; */
+}
+/* 
+@keyframes rotate {
+  from {
+    transform: translateX(-100%) rotate(-20deg);
+  }
+  to {
+    transform: translateX(0%) rotate(0deg);
+  }
+} */
+
+html {
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* mobile */
+
+.btn {
+  display: block;
+  padding: 1rem 0;
+  margin: 0 auto;
+  border-radius: 5rem;
+  width: 100%;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: black;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  transition: all 0.1s ease-in-out;
+  background-color: white;
+  max-width: 150px;
+}
+
+.btn:hover {
+  background-color: #000;
+  color: white;
+}
+
+.heading {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: green;
+  text-shadow: 1px 2px 3px #000;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 0.9fr));
+  justify-content: center;
+}
+
+@media only screen and (min-width: 576px) {
+}
+@media only screen and (min-width: 768px) {
+}
+@media only screen and (min-width: 992px) {
+}
+@media only screen and (min-width: 1200px) {
+}
+
+@media only screen and (min-width: 1400px) {
+}
