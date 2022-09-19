@@ -8,10 +8,10 @@ const TourCard = ({ id, name, image, info, price, removeId }) => {
       <article className="card-content">
         <article className="card-heading">
           <h1 className="card-title">{name} </h1>
-          <p className="card-price">{price}</p>
+          <p className="card-price">₹{price}00</p>
         </article>
         <p className="card-text">
-          {readMore ? info : `${info.substring(0, 200)}...`}
+          {readMore ? info : `${info.substring(0, 200)}...`}{" "}
           <button
             className="btn btn-read-more"
             onClick={() => {
